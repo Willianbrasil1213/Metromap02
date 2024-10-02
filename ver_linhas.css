@@ -1,0 +1,169 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fef0cf;
+    margin: 0;
+    padding: 20px; /* Adicionado padding para afastar do canto da tela */
+}
+
+.container {
+    text-align: center;
+    margin: 50px auto;
+    width: 80%;
+}
+
+.header {
+    background-color: #519271;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #ffb339;
+    margin: 0; /* Remove margin para melhor centralização */
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block; /* Faz o label ocupar toda a largura */
+    color: #333; /* Cor do texto do label */
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #519271; /* Cor da borda */
+    background-color: #fff;
+    margin-top: 10px; /* Espaço acima do select */
+    width: 60%; /* Largura do select */
+    max-width: 300px; /* Largura máxima do select */
+    cursor: pointer; /* Cursor de mão */
+    transition: border-color 0.3s ease; /* Efeito na borda */
+}
+
+select:focus {
+    outline: none; /* Remove o contorno padrão */
+    border-color: #e57042; /* Cor da borda ao focar */
+}
+
+.hidden {
+    display: none;
+}
+
+#informacoes-onibus {
+    margin-top: 20px; /* Espaço acima */
+    color: #fff; /* Cor do texto */
+    text-align: left;
+    background-color: #4A7C0D; /* Cor de fundo da div de informações */
+    padding: 15px; /* Mais espaço interno */
+    border-radius: 5px;
+    width: 80%; /* Largura do container */
+    max-width: 500px; /* Largura máxima do container */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para o box */
+}
+
+#mapa-estacoes {
+    display: block;
+    margin: 20px auto; /* Centraliza verticalmente */
+    background-color: #519271; /* Fundo verde para o canvas */
+    border: 2px solid #ffb339;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para o canvas */
+}
+
+#resultado {
+    margin-top: 20px; /* Espaço acima */
+    color: #ffffff;
+    text-align: left;
+    background-color: #e57042; /* Fundo verde para melhor visualização */
+    padding: 15px; /* Espaço interno */
+    border-radius: 5px;
+    width: 80%; /* Largura do container */
+    max-width: 500px; /* Largura máxima do container */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para o box */
+}
+
+button {
+    background-color: #ffb339; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    transition: background-color 0.3s ease; /* Efeito na cor de fundo */
+}
+
+button:hover {
+    background-color: #e57042; /* Cor do botão ao passar o mouse */
+}
+
+.quadro-roteiro {
+    background-color: #ff9800; /* Fundo laranja */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaço interno */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    width: 80%; /* Largura do quadro */
+    max-width: 500px; /* Largura máxima do quadro */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para o quadro */
+}
+
+.quadro-roteiro h1 {
+    font-family: 'Georgia', serif; /* Fonte estilizada */
+    font-size: 24px; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+}
+
+.quadro-roteiro label {
+    font-size: 18px; /* Tamanho da fonte do label */
+    color: #fff; /* Cor do texto do label */
+    margin-top: 10px; /* Espaço acima do label */
+}
+
+.quadro-roteiro select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none; /* Remove a borda padrão */
+    margin-top: 10px; /* Espaço acima do select */
+}
+
+.quadro-roteiro button {
+    background-color: #e57042; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    transition: background-color 0.3s ease; /* Efeito na cor de fundo */
+    margin-top: 15px; /* Espaço acima do botão */
+}
+
+.quadro-roteiro button:hover {
+    background-color: #c65932; /* Cor do botão ao passar o mouse */
+}
+
+
+.favoritar-btn {
+    background-color: #ffb339; /* Cor de fundo do botão de favoritar */
+    color: #fff; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    transition: background-color 0.3s ease; /* Efeito na cor de fundo */
+    margin-top: 15px; /* Espaço acima do botão */
+}
+
+.favoritar-btn:hover {
+    background-color: #e57042; /* Cor do botão ao passar o mouse */
+}

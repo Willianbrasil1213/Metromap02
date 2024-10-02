@@ -1,0 +1,149 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Configuração do corpo */
+body {
+    background-color: #fef0cf; /* Mesma cor de fundo do menu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal da tela de perfil */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column; /* Alinha as seções verticalmente */
+    gap: 20px; /* Espaçamento entre as seções */
+}
+
+/* Estilização da seção do perfil */
+.profile-container {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo da seção do perfil */
+    background-color: #4a7c67; /* Cor do fundo da seção de perfil */
+    padding: 50px; /* Ajuste de padding para espaçamento adequado */
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Seção da foto do usuário */
+.photo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#user-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #ffb339; /* Mesma cor do título 'MetroMap' no menu */
+}
+
+#photo-upload {
+    margin-top: 10px;
+}
+
+/* Seção de informações do usuário */
+.info-section {
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+.info-section h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #ffb339; /* Mesma cor do logo 'MetroMap' */
+}
+
+.info-section p {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #333333; /* Cor semelhante aos botões no menu */
+}
+
+/* Seção de favoritos */
+.favorites-section {
+    background-color: #3b5d49; /* Cor do fundo da seção de favoritos */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    color: white; /* Texto branco para contraste */
+}
+
+/* Colunas para mostrar os ônibus e rotas favoritadas */
+.favorites-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Alinha as colunas para os favoritos */
+.favorite-column {
+    width: 45%;
+}
+
+.favorite-column h3 {
+    font-size: 20px;
+    color: #ffb339; /* Mesma cor usada nos elementos importantes */
+    margin-bottom: 10px;
+}
+
+/* Estilização da lista de ônibus favoritados */
+#onibus-favoritados,
+#rotas-favoritadas {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding */
+}
+
+#onibus-favoritados li,
+#rotas-favoritadas li {
+    background-color: #ffe6a7; /* Cor de fundo suave para os itens da lista */
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Cor preta para as letras específicas */
+#onibus-favoritados li,
+#rotas-favoritadas li {
+    color: #000; /* Define a cor do texto como preto */
+}
+
+#onibus-favoritados li:hover,
+#rotas-favoritadas li:hover {
+    background-color: #ffd15c; /* Cor de destaque ao passar o mouse */
+}
+
+/* Seletor para os textos "Mu -> Alfa" */
+.mu-alfa {
+    color: #000; /* Define a cor do texto como preto */
+}
+
+/* Estilização do botão de remoção */
+.remove-button {
+    background-color: #ff3b30; /* Cor de fundo vermelho */
+    color: white; /* Cor do texto em branco */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 15px; /* Aumenta o espaçamento interno do botão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s, transform 0.2s; /* Efeito de transição */
+    margin: 5px; /* Distância entre os botões */
+}
+
+.remove-button:hover {
+    background-color: #b3241f; /* Cor de fundo vinho ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão ao passar o mouse */
+}

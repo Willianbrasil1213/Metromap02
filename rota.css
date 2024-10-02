@@ -1,0 +1,118 @@
+/* Estilização do corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fef0cf; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Menu principal */
+.menu {
+    text-align: center;
+    background-color: #4a7c67; /* Atualizado para uma cor mais moderna */
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    width: 800px;
+}
+
+/* Logotipo */
+.logo {
+    font-size: 50px;
+    color: #ffb339; 
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+/* Container das rotas */
+.rota-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #3b5d49; /* Atualizado para uma cor mais moderna */
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+/* Estilização dos rótulos */
+label {
+    display: block;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Estilização dos selects */
+select {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ffb339;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #fff; /* Fundo branco para melhor contraste */
+}
+
+/* Estilização do botão do menu */
+button.menu-button {
+    background-color: #ffb339;
+    color: #333333;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+}
+
+/* Efeito de hover no botão do menu */
+button.menu-button:hover {
+    background-color: #cc8a29;
+    transform: scale(1.05);
+}
+
+/* Estilização do resultado */
+#resultado {
+    margin-top: 20px;
+}
+
+#resultado h2 {
+    margin-bottom: 10px;
+    color: #333333; /* Cor do texto para melhor legibilidade */
+}
+
+/* Estilização da lista de ônibus */
+#lista-onibus {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+/* Classe oculta */
+.hidden {
+    display: none;
+}
+
+/* Mapa das estações */
+#mapa-estacoes {
+    display: block;
+    margin: 20px auto;
+    background-color: #4a7c67; /* Atualizado para uma cor mais moderna */
+    border: 2px solid #ffb339;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+}
+
+/* Estilização do canvas */
+canvas {
+    border: 1px solid #ffb339;
+    border-radius: 10px;
+}

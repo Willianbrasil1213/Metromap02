@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Rota</title>
+    <link rel="stylesheet" href="rota.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="menu">
+        <h1 class="logo">Criar Rota</h1>
+        <div class="rota-container">
+            <label for="ponto-partida">Selecione o ponto de partida:</label>
+            <select id="ponto-partida">
+                <option value="Alfa">Alfa</option>
+                <option value="Beta">Beta</option>
+                <option value="Gama">Gama</option>
+                <option value="Delta">Delta</option>
+                <option value="Epsilon">Epsilon</option>
+                <option value="Zeta">Zeta</option>
+                <option value="Lambda">Lambda</option>
+                <option value="Mu">Mu</option>
+                <option value="Kappa">Kappa</option>
+                <option value="Iota">Iota</option>
+                <option value="Teta">Teta</option>
+                <option value="Eta">Eta</option>
+            </select>
+
+            <br><br>
+
+            <label for="ponto-chegada">Selecione o ponto de chegada:</label>
+            <select id="ponto-chegada">
+                <option value="Alfa">Alfa</option>
+                <option value="Beta">Beta</option>
+                <option value="Gama">Gama</option>
+                <option value="Delta">Delta</option>
+                <option value="Epsilon">Epsilon</option>
+                <option value="Zeta">Zeta</option>
+                <option value="Lambda">Lambda</option>
+                <option value="Mu">Mu</option>
+                <option value="Kappa">Kappa</option>
+                <option value="Iota">Iota</option>
+                <option value="Teta">Teta</option>
+                <option value="Eta">Eta</option>
+            </select>
+
+            <br><br>
+
+            <button onclick="criarRota()" class="menu-button">Mostrar Ônibus</button>
+            <button onclick="salvarRota()" class="menu-button">Salvar Rota</button>
+
+            <div id="resultado" class="hidden">
+                <h2>Rota:</h2>
+                <ul id="lista-onibus">
+                </ul>
+                <canvas id="mapa-estacoes" width="800" height="600"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="rota.js"></script>
+</body>
+</html>

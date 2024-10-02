@@ -1,0 +1,62 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fef0cf; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Garante que ocupa toda a altura da tela */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave ao fundo */
+}
+
+.menu {
+    text-align: center; /* Centraliza o texto dentro do menu */
+    background: linear-gradient(145deg, #4a7c67, #3b5d49); /* Gradiente para um visual mais moderno */
+    padding: 50px;
+    border-radius: 20px; /* Arredondamento mais suave */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2); /* Sombra mais sutil e difusa */
+    width: 400px; /* Reduz a largura para um visual mais compacto */
+}
+
+.logo {
+    font-size: 48px; /* Reduz um pouco o tamanho da fonte para balancear */
+    color: #ffb339; 
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    letter-spacing: 5px; /* Reduz o espaçamento das letras para um visual mais elegante */
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os botões na coluna */
+    gap: 15px;
+}
+
+.menu-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff; /* Cor do texto alterada para branco */
+    background: #e57042; /* Cor de fundo do botão */
+    border: none;
+    border-radius: 30px; /* Arredondamento mais acentuado */
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Transições suaves */
+    position: relative; /* Para efeito de hover */
+}
+
+.menu-button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Efeito de hover mais claro */
+    transform: translateY(-3px); /* Levanta o botão levemente ao passar o mouse */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Sombra mais intensa ao passar o mouse */
+}
+
+.menu-button:active {
+    transform: translateY(1px); /* Efeito de pressão no botão */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Reduz a sombra quando pressionado */
+}

@@ -1,0 +1,73 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fef0cf; /* Cor de fundo suave */
+    margin: 0;
+    padding: 20px;
+    display: flex; /* Flexbox para centralização vertical e horizontal */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Preenche toda a altura da tela */
+}
+
+.login-container,
+.register-container {
+    background-color: #ff9800; /* Fundo laranja */
+    border-radius: 10px;
+    padding: 30px; /* Aumentado para dar mais espaço interno */
+    width: 300px; /* Largura fixa */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Sombra mais suave */
+    text-align: center; /* Centraliza o texto dentro da div */
+    margin: 20px; /* Margem entre as caixas */
+}
+
+h1 {
+    color: #fff; /* Cor do texto */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna */
+}
+
+label {
+    color: #fff; /* Cor do texto do label */
+    display: block;
+    margin-top: 10px;
+    font-size: 16px; /* Aumentado para melhor legibilidade */
+}
+
+input {
+    width: calc(100% - 20px); /* Largura responsiva com padding */
+    padding: 10px; /* Espaço interno */
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 2px solid #519271; /* Borda verde */
+    outline: none; /* Remove o contorno padrão */
+    transition: border-color 0.3s; /* Transição para a cor da borda */
+}
+
+input:focus {
+    border-color: #ffb339; /* Cor da borda ao focar */
+}
+
+button {
+    background-color: #ffb339; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px; /* Espaço acima do botão */
+    transition: background-color 0.3s; /* Transição suave na cor do botão */
+    font-size: 16px; /* Aumentado para melhor legibilidade */
+}
+
+button:hover {
+    background-color: #e57042; /* Cor do botão ao passar o mouse */
+}
+
+#login-status,
+#register-status {
+    color: red; /* Cor do texto de status de login/registro */
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px; /* Ajustado para melhor legibilidade */
+}

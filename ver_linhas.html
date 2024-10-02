@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Rota de Ônibus</title>
+    <link rel="stylesheet" href="ver_linhas.css">
+</head>
+<body>
+    <div class="container">
+        <div class="quadro-roteiro">
+            <h1>Ver Rota de Ônibus</h1>
+            <label for="onibus">Selecione o ônibus:</label>
+            <select id="onibus">
+                <!-- As opções serão carregadas dinamicamente via JavaScript -->
+            </select>
+            <button id="ver-rota">Ver Rota</button>
+            <button id="favoritar" class="favoritar-btn">
+                <span id="estrela">&#9734;</span> Favoritar
+            </button>
+        </div>
+        <div id="resultado"></div>
+    </div>
+    <canvas id="mapa-estacoes" width="800" height="600"></canvas>
+    <script src="ver_linhas.js"></script>
+</body>
+</html>

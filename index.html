@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetroMap</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="menu">
+        <img src="logo.png" class="logo-img">
+        <h1 class="logo">MetroMap</h1> 
+        <div class="menu-buttons">
+            <a href="perfil.html" class="menu-button">
+                <i class="fas fa-user-circle"></i> - Perfil
+            </a> 
+            <a href="estacao.html" class="menu-button">
+                <i class="fas fa-map-marker-alt"></i> - Estações
+            </a>
+            <a href="rota.html" class="menu-button">
+                <i class="fas fa-map-signs"></i> - Rotas
+            </a> 
+            <a href="ver_linhas.html" class="menu-button" onclick="mostrarLinhasOnibus()">
+                <i class="fas fa-bus-alt"></i> - Ver Linhas de Ônibus
+            </a>
+            <a href="telaCadastro.html" class="menu-button" id="cadastrar-onibus-btn" style="display: none;">
+                <i class="fas fa-bus"></i> - Cadastrar Ônibus
+            </a>
+            <a href="Suporte.html" class="menu-button">
+                <i class="fas fa-headset"></i> - Suporte
+            </a>
+            <a href="#" class="menu-button" id="logout-btn" onclick="logout()">
+                <i class="fas fa-sign-out-alt"></i> - Deslogar
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Função para deslogar
+        function logout() {
+            localStorage.setItem('loggedIn', 'off'); // Altera o status de login
+            localStorage.removeItem('currentUser'); // Remove o usuário atual, se necessário
+
+            // Aguarda um pequeno tempo antes de redirecionar
+            setTimeout(() => {
+                window.location.href = 'login.html'; // Redireciona para a tela de login
+            }, 200); // Espera 200ms para garantir que o localStorage seja atualizado
+        }
+
+        // Verifica se o usuário atual é um administrador e exibe o botão de cadastro de ônibus
+        const usuarioAtual = localStorage.getItem('currentUser');
+        const cadastrarOnibusBtn = document.getElementById('cadastrar-onibus-btn');
+
+        if (usuarioAtual && usuarioAtual.startsWith('admin.')) {
+            cadastrarOnibusBtn.style.display = 'block'; // Exibe o botão
+        }
+    </script>
+</body>
+</html>

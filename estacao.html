@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Estações</title>
+    <link rel="stylesheet" href="estacao.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="menu">
+        <h1 class="logo">Mapa de Estações</h1>
+        <div class="container">
+            <div class="map-container">
+                <canvas id="mapa-estacoes" width="800" height="600"></canvas>
+            </div>
+            <div class="info-container">
+                <div id="info-estacao" class="hidden">
+                    <h2 id="nome-estacao"></h2>
+                    <p id="onibus-estacao"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="estacao.js"></script>
+</body>
+</html>

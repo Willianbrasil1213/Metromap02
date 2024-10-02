@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Ônibus</title>
+    <link rel="stylesheet" href="styleCadastro.css">
+</head>
+<body>
+    <div class="container">
+        <form id="onibusForm">
+            <h2>Cadastrar Ônibus</h2>
+
+            <!-- Nome da Empresa -->
+            <label for="empresa">Nome da Empresa:</label>
+            <input type="text" id="empresa" name="empresa" required>
+
+            <!-- Linha do Ônibus -->
+            <label for="linha">Linha do Ônibus:</label>
+            <input type="text" id="linha" name="linha" required>
+
+            <!-- Estações -->
+            <label for="estacoes">Selecione as Estações:</label>
+            <div id="estacoesWrapper">
+                <select id="estacoesSelect">
+                    <option value="" disabled selected>Selecione uma estação</option>
+                    <option value="Alfa">Alfa</option>
+                    <option value="Beta">Beta</option>
+                    <option value="Gama">Gama</option>
+                    <option value="Delta">Delta</option>
+                    <option value="Epsilon">Epsilon</option>
+                    <option value="Zeta">Zeta</option>
+                    <option value="Eta">Eta</option>
+                    <option value="Teta">Teta</option>
+                    <option value="Iota">Iota</option>
+                    <option value="Kappa">Kappa</option>
+                    <option value="Lambda">Lambda</option>
+                    <option value="Mu">Mu</option>
+                </select>
+                <button type="button" id="addEstacao">Adicionar Estação</button>
+            </div>
+            <ul id="estacoesList"></ul>
+
+            <!-- Horários -->
+            <label for="horarios">Adicione os Horários:</label>
+            <div id="horariosWrapper">
+                <input type="time" id="horarioInput" name="horario">
+                <button type="button" id="addHorario">Adicionar Horário</button>
+            </div>
+            <ul id="horariosList"></ul>
+
+            <!-- Botão de Cadastro -->
+            <button type="submit">Cadastrar Ônibus</button>
+        </form>
+
+        <div id="onibusCadastrados">
+            <h2>Ônibus Cadastrados</h2>
+            <ul id="listaOnibus"></ul>
+        </div>
+    </div>
+
+    <script src="scriptCadastro.js"></script>
+</body>
+</html>

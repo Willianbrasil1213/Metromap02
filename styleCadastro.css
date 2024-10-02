@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centraliza verticalmente */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 40px; /* Espaço entre o formulário e a lista de ônibus */
+    width: 80%; /* Define uma largura máxima para centralizar */
+    max-width: 1200px; /* Limita a largura máxima */
+}
+
+.form-section, .bus-list-section {
+    width: 45%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); /* Adiciona sombra */
+}
+
+/* Ajustando cores */
+.form-section {
+    background-color: #519271; /* Cor verde padrão */
+}
+
+.bus-list-section {
+    background-color: #ffb339; /* Cor laranja padrão */
+}
+
+h2 {
+    margin-top: 0;
+    color: #519271; /* Cor verde padrão para os títulos */
+    text-align: center; /* Centraliza o título */
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center; /* Centraliza os labels */
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* Mantém o fundo dos inputs branco */
+    text-align: center; /* Centraliza o texto dentro dos inputs */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #e57042; /* Cor laranja padrão */
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white; /* Cor do texto branco nas listas */
+    text-align: center; /* Centraliza o texto dentro dos itens da lista */
+}
+
+button {
+    background-color: #519271; /* Cor verde padrão */
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    text-align: center; /* Centraliza o texto no botão */
+}
+
+button:hover {
+    background-color: #45a049; /* Cor verde mais escura no hover */
+}

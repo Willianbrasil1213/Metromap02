@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-container">
+            <!-- Div para a foto -->
+            <div class="photo-section">
+                <img src="default-avatar.png" alt="Foto do Usuário" id="user-photo">
+                <input type="file" id="photo-upload" accept="image/*">
+            </div>
+
+            <!-- Div para as informações do usuário -->
+            <div class="info-section">
+                <h2>Informações do Usuário</h2>
+                <p><strong>Email:</strong> <span id="user-email"></span></p>
+                <p><strong>Usuário:</strong> <span id="user-username"></span></p>
+                <p><strong>Senha:</strong> <span id="user-password"></span></p>
+            </div>
+        </div>
+
+        <!-- Seção para favoritos -->
+        <div class="favorites-section">
+            <h2>Favoritos</h2>
+            <div class="favorites-columns">
+                <div class="favorite-column">
+                    <h3>Ônibus Favoritados</h3>
+                    <ul id="onibus-favoritados"></ul> <!-- Lista para ônibus favoritados -->
+                </div>
+                <div class="favorite-column">
+                    <h3>Rotas Favoritadas</h3>
+                    <ul id="rotas-favoritadas"></ul> <!-- Lista para rotas favoritadas -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="perfil.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte</title>
+    <link rel="stylesheet" href="suporte.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Suporte MetroMap</h2>
+        <p>Envie sua reclamação ou sugestão diretamente para nossa equipe!</p>
+
+        <form id="suporte-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="mensagem">Sua mensagem:</label>
+            <textarea id="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <p id="status"></p>
+    </div>
+
+    <script src="suporte.js"></script>
+</body>
+</html>

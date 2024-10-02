@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css"> <!-- Link para seu CSS -->
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        
+        <label for="username">Nome de Usuário:</label>
+        <input type="text" id="username" required>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" required>
+
+        <button id="login-btn">Entrar</button>
+        <div id="login-status"></div>
+        
+        <p>Não tem uma conta? <a href="register.html">Crie uma conta aqui!</a></p>
+    </div>
+
+    <script>
+        document.getElementById('login-btn').addEventListener('click', () => {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Recupera os usuários do localStorage
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+
+            // Verifica se o usuário e a senha estão corretos
+            const user = users.find(user => user.username === username && user.password === password);
+
+            if (user) {
+                localStorage.setItem('loggedIn', 'on'); // Armazena status de login
+                localStorage.setItem('currentUser', username); // Armazena o usuário atual
+                window.location.href = 'index.html'; // Redireciona para index.html
+            } else {
+                document.getElementById('login-status').innerText = 'Usuário ou senha incorretos!';
+            }
+        });
+
+        // Verifica se o usuário já está logado
+        window.onload = () => {
+            const loggedIn = localStorage.getItem('loggedIn');
+            if (loggedIn === 'on') {
+                window.location.href = 'index.html'; // Redireciona se já estiver logado
+            }
+        };
+    </script>
+</body>
+</html>
